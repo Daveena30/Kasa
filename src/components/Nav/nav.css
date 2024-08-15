@@ -5,23 +5,23 @@
     justify-content: space-between;
     align-items: center;
 
-    &-items {
+    ul {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         list-style: none;
     }
 
-    &-item {
+    li {
         margin-left: 70px;
 
-        &-link {
+        .link {
             text-decoration: none;
             color: #000000;
             font-size: 1.5rem;
         }
 
-        &-active {
+        .active {
             text-decoration: underline;
 
         }
