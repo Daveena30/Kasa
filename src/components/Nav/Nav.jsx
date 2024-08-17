@@ -1,4 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
+import data from '../../assets/data.json';
+import logo from '../../assets/nav.webp';
 import './nav.css';
 
 const Nav = () => {
@@ -6,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav className="nav">
-      <img src="#" alt="#" />
+      <img src={logo} alt={data.logo} />
 
       <ul>
         <li>
