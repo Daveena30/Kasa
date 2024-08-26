@@ -8,7 +8,9 @@ const Nav = () => {
 
   return (
     <nav className="nav">
+      <Link to="/">
       <img src={logo} alt={data.logo} />
+      </Link>
 
       <ul>
         <li>

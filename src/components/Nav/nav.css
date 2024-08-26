@@ -1,18 +1,33 @@
 .nav {
-    width: 80%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
+    font-size: 0.8rem;
+
+    img {
+        height: 48px;
+    }
 
     ul {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        gap: 2rem;
         list-style: none;
+        text-transform: uppercase;
     }
 
-    li {
+    .link {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .active,
+    .link:hover,
+    .link:focus {
+        text-decoration: underline;
+    }
+
+    /*li {
         margin-left: 70px;
 
         .link {
@@ -25,5 +40,5 @@
             text-decoration: underline;
 
         }
-    }
+    }*/
 }
