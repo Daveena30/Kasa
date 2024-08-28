@@ -2,12 +2,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    position: relative;
+    margin: 10px 10px;
+    height: 110px;
 
     img {
+        position: absolute;
         object-fit: cover;
         border-radius: 10px;
         height: 110px;
         width: 100%;
+    }
+
+    h1 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0 20px;
+        color: var(--white);
+
     }
 }
