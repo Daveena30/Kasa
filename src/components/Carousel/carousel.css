@@ -1,0 +1,38 @@
+.carousel {
+    position: relative;
+    color: var(--white);
+  
+    img {
+      border-radius: 10px;
+      height: 255px;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    nav > * {
+      position: absolute;
+    }
+  
+    i {
+      font-size: 1.5rem;
+    }
+  
+    [class*="fa-chevron-"] {
+      top: calc(50% - 12px);
+      cursor: pointer;
+    }
+  
+    .fa-chevron-left {
+      left: 10px;
+    }
+  
+    .fa-chevron-right {
+      right: 10px;
+    }
+  
+    b {
+      display: none;
+    }
+
+
+}

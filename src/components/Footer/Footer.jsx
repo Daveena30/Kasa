@@ -1,10 +1,9 @@
 import data from '../../assets/data.json';
 import logo from '../../assets/footer.webp';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
-  const location = useLocation()
   return (
     <footer className='footer'>
       <Link to="/">

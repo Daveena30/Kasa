@@ -17,6 +17,16 @@ const Card = ({id, title, cover, alt}) => {
    )
 };
 
+// const CardContainer = () => {
+   // return (
+       // <div className="cards">
+           // {data.accommodations.map(({id, title, cover, alt}) => (
+              //  <Card key={accommodations.id} id={accommodations.id} title={accommodations.title} cover={accommodations.cover} alt={accommodations.alt} />
+           // ))}
+        //</div>
+    //)
+//};
+
 
 
 export default Card;

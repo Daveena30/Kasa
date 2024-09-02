@@ -3,8 +3,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 0 20px;
     margin-bottom: 20px;
     height: 110px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
 
     img {
         position: absolute;
@@ -12,6 +17,7 @@
         border-radius: 10px;
         height: 110px;
         width: 100%;
+        filter: brightness(0.5);
     }
 
     h1 {

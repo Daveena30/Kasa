@@ -17,9 +17,9 @@ const Home = () => {
    />
 
 <section className="accomodation-list">
-  {data.accommodations.map(({id, title, cover, alt}) => 
+  {data.rental.map(({id, title, cover, alt}) => 
     <article key={id} className='accommodation-card'>
-      <Link to={`/accommodations/${id}`}>
+      <Link to={`/rental/${id}`}>
         <Card
         id={id}
         title={title}

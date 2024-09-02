@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  
+    .primary {
+      color: var(--primary-color);
+    }
+  
+    .secondary {
+      color: var(--secondary-color);
+    }
+
+}
