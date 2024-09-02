@@ -1,25 +1,17 @@
-
 import "./rating.css";
 
 const Rating = ({ rating }) => {
-
-    const stars = [];
-
-    for (let i = 0; i < 5; i++) {
-        stars.push(
-            <i
-                className={`fa-solid fa-star ${i < rating ? 'primary' : 'secondary'}`}
-                key={i}
-            ></i>
-        );
-    }
-
     return (
-        <figure className="rating">
-            {stars}
-        </figure>
-    );
-}
-
+    <figure className="rating">
+      {Array.from({ length: 5 }, (_, i) => (
+        <i
+          className={`fa-solid fa-star ${i < rating ? 'primary' : 'secondary'}`}
+          key={i}
+        />
+      ))}
+    </figure>
+  );
+ };
+    
 
 export default Rating

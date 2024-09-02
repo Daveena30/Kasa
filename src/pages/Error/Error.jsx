@@ -5,12 +5,12 @@ const Error = () => {
 
   return (
     <main id="error">
-
+    <div className="error-content">
       <h1>{data.code}</h1>
       <p>{data.error}</p>
       <a href="/">{data.link}</a>
-
-    </main>
+    </div>
+  </main>
   );
 }
 

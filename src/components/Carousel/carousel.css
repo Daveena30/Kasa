@@ -9,30 +9,30 @@
       object-fit: cover;
     }
   
-    nav > * {
+    nav  {
       position: absolute;
+      top : 50%;
+      width : 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   
     i {
       font-size: 1.5rem;
-    }
-  
-    [class*="fa-chevron-"] {
-      top: calc(50% - 12px);
       cursor: pointer;
     }
   
     .fa-chevron-left {
-      left: 10px;
+      margin-left: 10px;
     }
   
     .fa-chevron-right {
-      right: 10px;
+      margin-right: 10px;
     }
   
     b {
       display: none;
     }
-
 
 }

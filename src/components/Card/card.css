@@ -1,33 +1,23 @@
 .card {
-    position: relative;
-    margin: 20px 0;
-  
-    img {
-        
-      border-radius: 10px;
-      height: 255px;
-      width: 100%;
-      object-fit: cover;
+  position: relative;
+  margin: 20px 0;
 
-    }
-  
-    figcaption {
-      position: absolute;
-      font-size: 0.7rem;
-      font-weight: 500;
-      bottom: 5px;
-      left: 0;
-      border-radius: 0 0 10px 10px;
-      padding: 0 5px 0 5px;
-      width: calc(100% - 10px);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: var(--white);
-    }
+  img {
+    border-radius: 10px;
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
   }
-  
 
-
-
-
-
-  
+  figcaption {
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 500;
+    bottom: 5px;
+    border-radius: 0 0 10px 10px;
+    padding: 0 5px 0 5px;
+    width: calc(100% - 10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+  }
+}

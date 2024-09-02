@@ -1,16 +1,16 @@
 import data from '../../assets/data.json';
 import logo from '../../assets/footer.webp';
-import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <Link to="/">
+      <figure>
       <img src={logo} alt={data.logo} />
-      </Link>
+        <figcaption><p>© {data.year} {data.brand}. {data.copyright}</p></figcaption>
+      </figure>
 
-      <p>© {data.year} {data.brand}. {data.copyright}</p>
+     
     </footer>
   )
 }

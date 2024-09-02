@@ -8,58 +8,64 @@ import Rating from '../../components/Rating/Rating';
 import "./rental.css";
 
 
-const Rental = () => {
 
-    const { id } = useParams();
-  
-    const card = data.rental.find(
-      (card) => card.id === id
-    );
-  
-    if (!card) return <Error />
-  
-    return (
-      <main id="rental">
-  
-        <Carousel
-          pictures={card.pictures}
-          alt={card.title}
-        />
-  
-        <section>
-          <header>
-            <h1>{card.title}</h1>
-            <p>{card.location}</p>
-  
-            <ul>
-              { card.tags.map((tag) =>
-  
-                <li key={tag}>
-                  <label>{tag}</label>
-                </li>
-  
-              )}
-            </ul>
-          </header>
-  
-          <figure>
-            <Rating rating={card.rating} />
-  
-            <Host
-              name={card.host.name}
-              picture={card.host.picture}
-            />
-          </figure>
-        </section>
-  
-        <footer>
-        <Collapse title="Description" content={card.description} />
-  
-        <Collapse title="Équipements" content={card.equipments.join(', ')} />
-        </footer>
-  
-      </main>
-    )
-  }
-  
-  export default Rental
+const Rental = () => {
+  const { id } = useParams();
+
+  const card = data.rental.find(
+    (card) => card.id === id
+  );
+
+  if (!card) return <Error />
+
+  return (
+    <main id="rental">
+
+      <Carousel
+        pictures={card.pictures}
+        alt={card.title}
+      />
+
+      <section>
+        <header>
+          <h1>{card.title}</h1>
+          <p>{card.location}</p>
+
+          <ul>
+            {card.tags.map((tag) =>
+
+              <li key={tag}>
+                <label>{tag}</label>
+              </li>
+
+            )}
+          </ul>
+        </header>
+
+        <figure>
+          <Rating rating={card.rating} />
+
+          <Host
+            name={card.host.name}
+            picture={card.host.picture}
+          />
+        </figure>
+      </section>
+
+      <section>
+        <details>
+            <summary>Description</summary>
+            <p>{card.description}</p>
+        </details>
+
+        <details>
+            <summary>Équipements</summary>
+            <p>{card.equipments.join(', ')}</p>
+        </details>
+    </section>
+
+    </main>
+  )
+}
+
+export default Rental
