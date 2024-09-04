@@ -1,7 +1,7 @@
 [id=rental] {
   margin: 20px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
 
   section {
     display: flex;
@@ -32,17 +32,23 @@
         padding: 5px 10px;
         background-color: var(--primary-color);
         color: var(--white);
-        display: inline-block;
+       
 
       }
     }
 
     figure {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
     }
 
+
+
+
+
+   
     /*details {
       margin: 10px 0;
       padding: 0.5em 0.1em 0.5em 0.1em;

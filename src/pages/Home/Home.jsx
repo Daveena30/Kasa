@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import data from '../../assets/data.json';
-import img from '../../assets/home.webp';
+import homeImg from '../../assets/home.webp';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import './home.css';
@@ -11,9 +11,9 @@ const Home = () => {
   return (
     <main id="home">
    <Banner
-   src={img}
-   alt="data.home"
-   title="data.title"
+   src={homeImg}
+   alt="Des falaises en bord de mer"
+   title="Chez vous, partout et ailleurs"
    />
 
 <section className="accomodation-list">

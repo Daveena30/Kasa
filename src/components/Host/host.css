@@ -1,16 +1,18 @@
 .host {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  
-    figcaption {
-      color: var(--primary-color);
-      text-align: right;
-    }
-  
-    img {
-      border-radius: 50%;
-      height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: flex-end;
+  gap: 10px;
 
-    }
+  figcaption {
+    color: var(--primary-color);
+    line-height: 1;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 35px;
+
+  }
 }

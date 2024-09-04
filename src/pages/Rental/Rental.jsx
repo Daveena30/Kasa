@@ -52,17 +52,17 @@ const Rental = () => {
         </figure>
       </section>
 
-      <section>
-        <details>
-            <summary>Description</summary>
-            <p>{card.description}</p>
-        </details>
+      <footer>
+        <Collapse
+          title={data.text}
+          content={card.description}
+        />
 
-        <details>
-            <summary>Équipements</summary>
-            <p>{card.equipments.join(', ')}</p>
-        </details>
-    </section>
+        <Collapse
+          title={data.list}
+          content={card.equipments}
+        />
+      </footer>
 
     </main>
   )
