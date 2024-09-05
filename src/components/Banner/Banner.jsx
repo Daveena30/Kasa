@@ -8,7 +8,7 @@ const Banner = ({ src, alt, title = "" }) => {
         <header className="banner">
             <img src={src} alt={alt} />
 
-            { title && <h1>{title}</h1> }
+            { title && <h1>{title.slice(0, 11)}<br/>{title.slice(11)}</h1> }
 
         </header>
     )

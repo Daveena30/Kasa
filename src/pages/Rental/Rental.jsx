@@ -42,7 +42,7 @@ const Rental = () => {
           </ul>
         </header>
 
-        <figure>
+        <figure className='figure'>
           <Rating rating={card.rating} />
 
           <Host

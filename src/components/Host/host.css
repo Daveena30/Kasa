@@ -4,6 +4,7 @@
   text-align: right;
   justify-content: flex-end;
   gap: 10px;
+  width: 30%;
 
   figcaption {
     color: var(--primary-color);

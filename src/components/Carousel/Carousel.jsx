@@ -19,7 +19,7 @@ const Carousel = ({ pictures, alt }) => {
                 <nav>
                     <i className="fa-solid fa-chevron-left" onClick={() => changeSlide(-1)}></i>
                     <i className="fa-solid fa-chevron-right" onClick={() => changeSlide(1)}></i>
-                    <b>{index + 1}/{pictures.length}</b>
+                    <b className="carousel-counter">{index + 1}/{pictures.length}</b>
                 </nav>
             )}
         </figure>

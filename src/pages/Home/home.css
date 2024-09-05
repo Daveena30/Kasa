@@ -1,14 +1,31 @@
 [id=home] {
     margin: 20px;
 
-    accomodation-list {
+    .accomodation-list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        flex-wrap: wrap; 
     }
 
-    .accommodation-card {
+    accommodation-card {
         width: 100%;
     }
 }
+
+@media (min-width: 1200px) {
+    [id=home] {
+        margin: 50px 100px;
+      }
+    
+    .accomodation-list {
+        gap: 30px;
+    }
+    .accommodation-card {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+
+
+
+
 

@@ -1,7 +1,7 @@
 .banner {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     position: relative;
     margin-bottom: 20px;
     height: 110px;
@@ -28,7 +28,31 @@
         color: var(--white);
 
     }
+
+    
+
 }
+
+@media (min-width: 1200px) {
+    .banner {
+        margin: 10px 0;  
+        height: 220px;
+    }
+    
+
+    img {
+        height: 220px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+
+
+
+
 
 
 

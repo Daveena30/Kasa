@@ -1,5 +1,15 @@
 [id=about] {
     margin: 20px;
 
-    
+
 }
+
+  
+  /* Media query for larger screens (min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .section {
+      margin: 50px 100px; /* Larger margin for bigger screens */
+      width: calc(100% - 200px); /* Adjust width */
+      padding: 0 100px; /* Padding around the content */
+    }
+  }
