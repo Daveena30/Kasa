@@ -52,15 +52,10 @@
   }
 
   @media (min-width: 1200px) {
-    section {
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
+    [id=rental] {
+      margin: 50px 100px;
     }
 
-    .figure {
-      flex-flow: column;
-      justify-content: start;
-    }
   }
+  
 }

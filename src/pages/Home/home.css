@@ -18,6 +18,9 @@
     
     .accomodation-list {
         gap: 30px;
+        background-color: var(--grey);
+        padding: 30px;
+        border-radius: 10px;
     }
     .accommodation-card {
         width: calc((100% - 60px) / 3);

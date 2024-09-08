@@ -36,12 +36,12 @@
 @media (min-width: 1200px) {
     .banner {
         margin: 10px 0;  
-        height: 220px;
+        height: 250px;
     }
     
 
-    img {
-        height: 220px;
+    .img {
+        height: 50px;
     }
 
     h1 {
