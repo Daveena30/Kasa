@@ -11,6 +11,7 @@ const About = () => {
     <main id="about">
       <Banner src={aboutImg} alt="Des forêts entourées de montagnes"
       />
+      <div className='about__collapse'>
       {data.collapse.map(({title, content}) => (
         <Collapse
         key={title}
@@ -18,6 +19,7 @@ const About = () => {
         content={content}
         />
       ))}
+      </div>
 
     </main>
   )

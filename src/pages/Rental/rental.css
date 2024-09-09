@@ -1,7 +1,9 @@
 [id=rental] {
-  margin: 20px;
   display: flex;
   flex-flow: column wrap;
+  width: 90%;
+  margin: 20px auto;
+  
 
   section {
     display: flex;
@@ -40,22 +42,24 @@
         background-color: var(--primary-color);
         color: var(--white);
 
-
       }
     }
-
-    
-    
-
-
-
   }
 
   @media (min-width: 1200px) {
-    [id=rental] {
-      margin: 50px 100px;
+    section {
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
+    .figure {
+      flex-flow: column-reverse;
+      justify-content: start;
+    }
+
+    header ul label {
+      border-radius: 12px;
+    }
   }
-  
 }

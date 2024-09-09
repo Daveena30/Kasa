@@ -1,15 +1,20 @@
 [id=about] {
-    margin: 20px;
-
+  width: 90%;
+  margin: 0px auto;
 
 }
 
-  
-  /* Media query for larger screens (min-width: 1200px) */
   @media (min-width: 1200px) {
-    .section {
-      margin: 50px 100px; /* Larger margin for bigger screens */
-      width: calc(100% - 200px); /* Adjust width */
-      padding: 0 100px; /* Padding around the content */
+    [id=about] 
+    section {
+      margin: 50px 100px;
+      width: calc(100% - 200px);
+      padding: 0 100px;
+    }
+    .about__collapse {
+      .collapse {
+        width: 90%;
+      
     }
   }
+}

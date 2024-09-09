@@ -1,5 +1,6 @@
 [id=home] {
-    margin: 20px;
+    width: 90%;
+  margin: 20px auto;
 
     .accomodation-list {
         display: flex;
@@ -11,21 +12,24 @@
     }
 }
 
-@media (min-width: 1200px) {
-    [id=home] {
-        margin: 50px 100px;
-      }
-    
+
+  @media (min-width: 1200px) {
+    [id='home'] {
+      margin: 50px 100px;
+    }
+
     .accomodation-list {
-        gap: 30px;
-        background-color: var(--grey);
-        padding: 30px;
-        border-radius: 10px;
+      gap: 30px;
+      justify-content: center;
+      background-color: var(--grey);
+      padding: 30px;
+      border-radius: 10px;
     }
     .accommodation-card {
-        width: calc((100% - 60px) / 3);
+      width: calc((100% - 60px) / 3);
     }
-}
+  }
+
 
 
 

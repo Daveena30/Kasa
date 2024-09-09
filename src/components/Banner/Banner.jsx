@@ -12,7 +12,7 @@ const Banner = ({ src, alt, title = "" }) => {
 
         </header>
     )
-}
+};
 
 export default Banner
 
