@@ -33,14 +33,13 @@
     }
   
     b {
-      /*display: none;*/
+      display: none;
       
     }
 
-}
-
 @media (min-width: 1200px) {
-b .carousel-counter {
+  b {
+  display: block;
   position: absolute;
   bottom: -90px;
   left: 50%;
@@ -49,5 +48,6 @@ b .carousel-counter {
   color: var(--white);
   Z-index: 200;
 
+}
 }
 }
