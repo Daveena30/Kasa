@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    width: 100%;
+    padding: 10px 0px;
     box-sizing: border-box;
    
 
@@ -48,8 +47,7 @@
 
 @media (min-width: 1200px) {
     .nav {
-      width: 90%;
-      margin: auto;
+      margin: 0 100px;
       font-size: 1,5rem;
       
       

@@ -1,5 +1,4 @@
 [id=home] {
-    width: 90%;
   margin: 20px auto;
 
     .accomodation-list {
@@ -27,7 +26,7 @@
       border-radius: 10px;
     }
     .accommodation-card {
-      width: calc((100% - 60px) / 3);
+      width: calc((100% - 40px) / 3);
     }
   }
 
