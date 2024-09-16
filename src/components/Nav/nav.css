@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0px auto;
    
-
     img {
         height: 48px;
         margin: 0;
@@ -17,8 +16,6 @@
     ul {
         display: flex;
         gap: 20px;
-        padding: 0;
-        margin: 0;
         list-style: none;
         text-transform: uppercase;
     }
@@ -26,7 +23,6 @@
     .link {
         text-decoration: none;
         color: var (--black);
-        padding: 0;
     }
 
     .active,
@@ -54,13 +50,13 @@
 @media (min-width: 1200px) {
     .nav {
       margin: auto;
+      padding: 25px 0 20px;
       width: 90%;
       font-size: 1,5rem;
       
       ul  {
         display: flex;
-        gap: 60px;
-  
+        gap: 60px; 
         }
       
     }
@@ -69,11 +65,10 @@
       height: 68px;
     }
   
-   
-
     .link {
       font-size: 1.2rem;
       text-transform: capitalize;
     }
   
   }
+
