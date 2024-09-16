@@ -1,8 +1,5 @@
 import "./banner.css";
 
-
-
-
 const Banner = ({ src, alt, title = "" }) => {
     return (
         <header className="banner">

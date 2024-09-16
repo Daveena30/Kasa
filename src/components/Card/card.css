@@ -1,13 +1,13 @@
 .card {
   position: relative;
-  height: 255px;
+  margin: 20px 0;
+  
 
   img {
     border-radius: 10px;
-    height: 100%;
+    height: 255px;
     width: 100%;
     object-fit: cover;
-
   }
 
 
@@ -36,8 +36,17 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  pointer-events: none;
+  overflow: hidden;
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .card {
+    margin: 0;
+  }
 }

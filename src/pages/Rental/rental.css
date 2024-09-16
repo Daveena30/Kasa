@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column wrap;
   width: 90%;
-  margin: 20px auto;
+  margin: 0px auto 10px auto;
   
 
   section {
@@ -50,12 +50,13 @@
     section {
       flex-flow: row;
       justify-content: space-between;
-      align-items: center;
+      align-items: end;
     }
 
     .figure {
       flex-flow: column-reverse;
       justify-content: start;
+      align-items: center;
     }
 
     header ul label {

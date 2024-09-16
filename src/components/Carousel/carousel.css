@@ -14,13 +14,12 @@
       justify-content: space-between;
       align-items: center;
       position: absolute;
-      top : 50%;
+      top : 40%;
       width : 100%;
-      
     }
   
     i {
-      font-size: 3rem;
+      font-size: 1.5rem;
       cursor: pointer;
     }
   
@@ -32,22 +31,36 @@
       margin-right: 10px;
     }
   
-    b {
-      display: none;
-      
-    }
+  }
 
-@media (min-width: 1200px) {
-  b {
-  display: block;
-  position: absolute;
-  bottom: -90px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: var(--white);
-  Z-index: 200;
+
+  @media (min-width: 1200px) {
+  .carousel-counter {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 0.8rem;
+    color: var(--white);
+    z-index: 200;
+  }
+
+  .carousel nav {
+    top : 40%;
+  }
+
+  .carousel i {
+    font-size: 3rem;
+  }
+  
+  .fa-chevron-left {
+    font-size: 10rem;
+  }
+  
+  .fa-chevron-right {
+    font-size: 10rem;
+  }
 
 }
-}
-}
+
+

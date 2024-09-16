@@ -1,11 +1,7 @@
 [id=home] {
-  margin: 20px auto;
-
-    .accomodation-list {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 20px;
-    }
+  width: 90%;
+  margin: 0 auto;
+  
 
     accommodation-card {
         width: 100%;
@@ -15,10 +11,12 @@
 
   @media (min-width: 1200px) {
     [id='home'] {
-      margin: 50px 100px;
+      margin: 20px auto;
     }
 
     .accomodation-list {
+      display: flex;
+      flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
       background-color: var(--grey);
@@ -26,7 +24,7 @@
       border-radius: 10px;
     }
     .accommodation-card {
-      width: calc((100% - 40px) / 3);
+      width: calc((100% - 60px) / 3);
     }
   }
 

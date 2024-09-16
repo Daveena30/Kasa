@@ -16,14 +16,20 @@ const Carousel = ({ pictures, alt }) => {
                 alt={`${alt} ($data.carousel} ${index + 1})`}
             />
             {pictures.length > 1 && (
+        <>
+          {' '}
                 <nav>
                     <i className="fa-solid fa-chevron-left" onClick={() => changeSlide(-1)}></i>
                     <i className="fa-solid fa-chevron-right" onClick={() => changeSlide(1)}></i>
-                    <b className="carousel-counter">{index + 1}/{pictures.length}</b>
-                </nav>
+                    </nav>
+                    <span className='carousel-counter'>
+            {index + 1}/{pictures.length}
+          </span>
+                </>
+                
             )}
         </figure>
-    )
+    );
 };
 
 export default Carousel;

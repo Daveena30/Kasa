@@ -7,7 +7,9 @@ const Footer = () => {
     <footer className='footer'>
       <figure>
       <img src={logo} alt={data.logo} />
-        <figcaption><p>© {data.year} {data.brand}. {data.copyright}</p></figcaption>
+        <figcaption><p>
+    © {data.year} {data.brand}. <br className="responsive" />
+    {data.copyright}</p></figcaption>
       </figure>
 
      
