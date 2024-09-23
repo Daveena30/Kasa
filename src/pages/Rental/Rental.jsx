@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import data from '../../assets/data.json';
 import Error from '../Error/Error';
 import Carousel from '../../components/Carousel/Carousel';
@@ -16,7 +16,7 @@ const Rental = () => {
     (card) => card.id === id
   );
 
-  if (!card) return <Error />
+  if (!card) return <Navigate to="/404" />
 
   return (
     <main id="rental">
