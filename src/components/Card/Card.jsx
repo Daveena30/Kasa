@@ -1,22 +1,24 @@
-import data from '../../assets/data.json';
+// Card.js
 import "./card.css";
-import { Link } from 'react-router-dom';
 
-const Card = ({id, title, cover, alt}) => {
-   const rental = data.rental;
-   return (
-       <figure className="card">
-        <img src={cover} alt={alt} />
-
-        <figcaption>
-          <Link to={`/rental/${id}`}>
-            <h2>{title}</h2>
-          </Link>
-        </figcaption>
-
-        </figure>
-   )
-};
+const Card = ({ title, cover, alt }) => {
+  return (
+    <figure className="card">
+      <img src={cover} alt={alt} />
+      <figcaption>
+        <h2>{title}</h2>
+      </figcaption>
+    </figure>
+  );
+}; 
 
 export default Card;
+
+
+
+
+
+
+
+
 

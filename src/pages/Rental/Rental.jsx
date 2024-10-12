@@ -1,6 +1,5 @@
 import { Navigate, useParams } from 'react-router-dom';
 import data from '../../assets/data.json';
-import Error from '../Error/Error';
 import Carousel from '../../components/Carousel/Carousel';
 import Collapse from '../../components/Collapse/Collapse';
 import Host from '../../components/Host/Host';

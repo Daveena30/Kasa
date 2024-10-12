@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
 import data from '../../assets/data.json';
 import homeImg from '../../assets/home.webp';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import './home.css';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -17,20 +17,20 @@ const Home = () => {
    />
 
 <section className="accomodation-list">
-  {data.rental.map(({id, title, cover, alt}) => 
+  {data.rental.map(({ id, title, cover, alt }) => (
     <article key={id} className='accommodation-card'>
       <Link to={`/rental/${id}`}>
         <Card
-        id={id}
-        title={title}
-        cover={cover}
-        alt={alt}
+          id={id}
+          title={title}
+          cover={cover}
+          alt={alt}
         />
-        </Link>
+      </Link>
     </article>
-  )}
-
+  ))}
 </section>
+
 
     </main>
   )

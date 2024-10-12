@@ -4,12 +4,12 @@ import logo from '../../assets/nav.webp';
 import './nav.css';
 
 const Nav = () => {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <nav className="nav">
       <Link to="/">
-      <img src={logo} alt={data.logo} />
+        <img src={logo} alt={data.logo} />
       </Link>
 
       <ul>
@@ -21,7 +21,7 @@ const Nav = () => {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

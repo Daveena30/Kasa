@@ -1,66 +1,64 @@
 .carousel {
-    position: relative;
-    color: var(--white);
-  
-    img {
-      border-radius: 10px;
-      height: 255px;
-      width: 100%;
-      object-fit: cover;
-    }
-  
-    nav  {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      top : 40%;
-      width : 100%;
-    }
-  
-    i {
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-  
-    .fa-chevron-left {
-      margin-left: 10px;
-    }
-  
-    .fa-chevron-right {
-      margin-right: 10px;
-    }
-  
+  position: relative;
+  color: var(--white);
+
+  img {
+    border-radius: 10px;
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
   }
 
-
-  @media (min-width: 1200px) {
-  .carousel-counter {
-    display: block;
+  nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    font-size: 0.8rem;
-    color: var(--white);
-    z-index: 200;
-  }
-
-  .carousel nav {
     top : 40%;
+    width : 100%;
   }
 
-  .carousel i {
-    font-size: 3rem;
+  i {
+    font-size: 1.5rem;
+    cursor: pointer;
   }
-  
+
   .fa-chevron-left {
-    font-size: 10rem;
+    margin-left: 10px;
   }
-  
+
   .fa-chevron-right {
-    font-size: 10rem;
+    margin-right: 10px;
   }
 
 }
 
 
+@media (min-width: 1200px) {
+.carousel-counter {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-size: 0.8rem;
+  color: var(--white);
+  z-index: 200;
+}
+
+.carousel nav {
+  top : 40%;
+}
+
+.carousel i {
+  font-size: 3rem;
+}
+
+.fa-chevron-left {
+  font-size: 10rem;
+}
+
+.fa-chevron-right {
+  font-size: 10rem;
+}
+
+}
