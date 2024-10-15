@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../pages/Home/Home'
-import About from '../pages/About/About'
-import Error from '../pages/Error/Error'
-import Rental from '../pages/Rental/Rental'
-import Nav from '../components/Nav/Nav'
-import Footer from '../components/Footer/Footer'
+import Home from '../pages/home/Home'
+import About from '../pages/about/About'
+import Error from '../pages/error/Error'
+import Rental from '../pages/rental/Rental'
+import Nav from '../components/nav/Nav'
+import Footer from '../components/footer/Footer'
 
 const Router = () => {
 

@@ -1,7 +1,7 @@
 import data from '../../assets/data.json';
 import homeImg from '../../assets/home.webp';
-import Banner from '../../components/Banner/Banner';
-import Card from '../../components/Card/Card';
+import Banner from '../../components/banner/Banner';
+import Card from '../../components/card/Card';
 import './home.css';
 import { Link } from 'react-router-dom';
 

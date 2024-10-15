@@ -1,8 +1,8 @@
 import React from 'react'
 import data from '../../assets/data.json';
 import aboutImg from '../../assets/about.webp';
-import Banner from '../../components/Banner/Banner';
-import Collapse from '../../components/Collapse/Collapse';
+import Banner from '../../components/banner/Banner';
+import Collapse from '../../components/collapse/Collapse';
 import './about.css'
 
 const About = () => {

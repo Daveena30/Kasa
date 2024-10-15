@@ -1,9 +1,9 @@
 import { Navigate, useParams } from 'react-router-dom';
 import data from '../../assets/data.json';
-import Carousel from '../../components/Carousel/Carousel';
-import Collapse from '../../components/Collapse/Collapse';
-import Host from '../../components/Host/Host';
-import Rating from '../../components/Rating/Rating';
+import Carousel from '../../components/carousel/Carousel';
+import Collapse from '../../components/collapse/Collapse';
+import Host from '../../components/host/Host';
+import Rating from '../../components/rating/Rating';
 import "./rental.css";
 
 
